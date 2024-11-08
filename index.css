@@ -1,3 +1,27 @@
-#heading {
-    color: red;
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px;
+    padding: 20px;
+    border: 1px solid rgb(20, 0, 0);
+    background-color: gray;
+    border-radius: 3px;
+}
+.logo{
+    width: 150px;
+    object-fit: cover;
+}
+.nav-items > ul {
+    display: flex;
+    gap: 50px;
+
+}
+.nav-items > ul > li{
+    list-style-type: none;
+}
+
+.nav-items{
+    font-size: 24px;
+    font-weight: 600;
 }

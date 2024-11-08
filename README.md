@@ -1,1 +1,1 @@
-my repo
+.gitignore -> avoiding files adding to git
