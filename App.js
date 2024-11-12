@@ -1,9 +1,17 @@
-const parent = React.createElement('div', {id:'parent'}, 
-    [React.createElement('div', {id:'child1'},
-        [React.createElement('h1', {id:'heading'}, 'I am h1 tag'),React.createElement('h2', {id:'heading2'}, 'I am h2 tag')] ),
-        React.createElement('div', {id:'child1'},
-            [React.createElement('h1', {id:'heading'}, 'I am h1 tag'),React.createElement('h2', {id:'heading2'}, 'I am h2 tag')] )]
-);
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Header from "./src/componets/Header";
+import Body from "./src/componets/Body";
 
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(parent);
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout />);
