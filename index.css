@@ -2,26 +2,244 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 10px;
     padding: 20px;
-    border: 1px solid rgb(20, 0, 0);
-    background-color: gray;
+    box-shadow: 1px 1px 1px 1px grey; 
     border-radius: 3px;
+    height: 100px;
+    width: 97vw;
+    
+   
+}
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
 }
 .logo{
     width: 150px;
+    height: 100px;
     object-fit: cover;
 }
 .nav-items > ul {
     display: flex;
-    gap: 50px;
+    gap: 30px;
+    align-items: center;
 
+}
+.nav-items > ul > button{
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    background-color: blueviolet;
+    font-weight: 600;
+    border: none;
+    width: 80px;
+    font-size: 18px;
+    border-radius: 3px;
 }
 .nav-items > ul > li{
     list-style-type: none;
 }
 
 .nav-items{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
+    padding: 20px;
+    color: grey;
+  
+}
+
+
+/* body */
+
+.body{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+
+/* not found restaurant */
+
+.not-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+.not-container > p{
+    color: grey;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.not-found{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 500;
+    color:gray;
+    font-family:'Times New Roman', Times, serif;
+}
+.icon{
+    font-size: 32px;
+    padding: 10px;
+}
+
+/* search bar */
+
+.search{
+    width: 350px;
+    border-radius: 5px;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.search > input{
+    outline: none;
+    border: none;
+    width: 262px;
+    
+    height: 48px;
+    border: 1px solid grey;
+    padding-left: 5px;
+}
+.search > input::placeholder{
+    text-transform: capitalize;
+    font-size: 15px;
+    
+}
+.search > button{
+    width: 80px;
+    height: 52px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: grey;
+    color:white ;
+    border: none;
+}
+
+.rests{
+    padding-left: 100px;
+    display: flex;
+    gap: 20px;
+}
+.btn-rests{
+    padding: 10px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+/* restaurant card */
+
+.res-card{
+    width: 450px;
+    height: 550px;
+   border-radius: 5px;  
+   box-shadow: 1px 1px 1px 1px grey; 
+   color:rgba(2, 6, 12, 0.6);
+   
+}
+
+.res-card:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px grey;
+    border: 1px solid grey;
+    background-color: white;
+}
+.res-img{
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+.details{
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.name{
+    margin-top: 15px;
+}
+.name-span{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+   
+}
+.details > span{
+    font-size: 16px;
+    font-weight: 600;
+}
+.rating{
+    display: flex;
+    gap: 20px;
+    color: black;
+}
+
+.res-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* Shimmer */
+
+.shimmer-container{
+    display: flex;
+   flex-direction: column; 
+    gap: 30px;
+    margin-top: 100px;
+    padding-left: 100px;
+
+}
+.shimmer-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.shimmer{
+    width: 450px;
+    height: 500px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shim-button{
+    
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
 }
