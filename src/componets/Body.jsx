@@ -3,6 +3,7 @@ import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDiss
 
 import { RestaurantCard } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [restaurantList, setRestaurantList] = useState([]);
@@ -19,13 +20,15 @@ const Body = () => {
     );
     const list = await data.json();
 
-    console.log(list.data)
+    console.log(list.data, 'lise')
     setRestaurantList(
       list?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setFilteredrestaurantList(
       list?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+
+    
   };
 
  
@@ -83,7 +86,8 @@ const Body = () => {
   ) : (<div className="res-container">
         
         {filteredrestaurantList.map((res, id) => (
-          <RestaurantCard key={res.info.id} resData={res} />
+
+          <Link className="link" key={res.info.id} to={`/restautant/${res.info.id}`}><RestaurantCard  resData={res} /></Link>
         ))}
       </div>)}
 

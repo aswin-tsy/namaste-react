@@ -1,0 +1,135 @@
+.menu{
+    border: 1px solid black;
+    width:900px;
+    margin: auto;
+    border-style:none;
+  
+    border-radius: 10px;
+
+}
+.menu-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.m-name{
+    font-size: 28px;
+    font-weight: bold;
+}
+.res-details{
+   border: 1px solid grey;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 20px;
+   padding: 20px;
+   border-radius: 20px;
+   box-shadow: 2px 2px 2px 2px  grey;
+}
+.res-details > span{
+    
+    font-weight: 600;
+}
+.ratings{
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cuisines{
+    color: #FF5200;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* recommended items */
+
+.menu-items{
+    padding: 20px;
+}
+.recom-menu{
+   
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.recom-container{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-content: center;
+    gap: 20px;
+    
+
+}
+.recom-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.f-name{
+    font-size: 20px;
+    color: #02060CBF;
+    font-weight: 600;
+}
+.price{
+    font-size: 18px;
+    font-weight: 500;
+    color: #dd5b1e;
+    
+}
+.f-desc{
+    
+    color: rgba(2, 6, 12, 0.6);
+    font-weight: 400;
+    font-size: 18px;
+}
+.line{
+    width: 100%;
+    height: .5px;
+   background-color: grey;
+}
+.recom-img > img{
+
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+}
+.recom-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.add{
+    width: 120px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 1px 1px  grey;
+    border-radius: 10px;
+    color:orange;
+    font-weight: bold;
+    font-size: 18px; 
+    position: absolute;
+    bottom: -10px;
+    
+}
+.add:hover{
+    background-color: lightgray;
+}
+
+.cust {
+    position: absolute;
+    bottom: -30px;
+    color: rgb(171, 166, 166);
+    font-size: 14px;
+    font-weight: 500;
+}

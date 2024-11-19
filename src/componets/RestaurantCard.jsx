@@ -23,6 +23,7 @@ export const RestaurantCard = (props) => {
         <span>{resData.info.cuisines.slice(0,4).join(", ")}</span>
         <span>{resData.info.costForTwo}</span>
         <span>{resData.info.locality}</span>
+        
       </div>
     </div>
   );

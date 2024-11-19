@@ -34,11 +34,15 @@
     width: 80px;
     font-size: 18px;
     border-radius: 3px;
+
 }
 .nav-items > ul > li{
     list-style-type: none;
 }
-
+.nav-items > ul > li > a{
+    text-decoration: none;
+    color: gray;
+}
 .nav-items{
     font-size: 20px;
     font-weight: 600;
@@ -156,6 +160,7 @@
    border-radius: 5px;  
    box-shadow: 1px 1px 1px 1px grey; 
    color:rgba(2, 6, 12, 0.6);
+   text-decoration: none;
    
 }
 
@@ -208,6 +213,9 @@
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+}
+.link{
+    text-decoration: none;
 }
 
 
