@@ -3,23 +3,28 @@ import React from 'react';
 
 
 class About extends React.Component {
-    constructor(){
-        super()
-        console.log('Parent constructor');
+    constructor(props){
+        super(props)
+        console.log(this.props);
+        // const data = this.props.location.state
+        // console.log(data, 'about');
     }
 
     componentDidMount(){
         console.log('parent did mount')
     }
   render() {
-    console.log('parent render')
+   
     return(
         <div>
+           <div className="dark:bg-gray-800 dark:text-white">
             <h1>About page</h1>
             <h2>This is my about page</h2>
             <UserClass name = {"Aswin"} place = {"Calicut"}/>
             <UserClass name = {"sarth"} place = {"Calicut"}/>
+        </div> 
         </div>
+        
     )
  }
 }
